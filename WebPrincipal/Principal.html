@@ -1,0 +1,69 @@
+﻿<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="shortcut icon" href="#">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="text-center">                    
+                    <h3>CRUD</h3>
+                </div>
+                <form class="form-horizontal" id="form-edit-client">
+                    <fieldset>
+                        <legend>Actividades</legend>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="txtId">ID</label>
+                            <div class="col-md-4">
+                                <input id="txtId" name="txtId" type="text" class="form-control input-md" disabled="true">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="txtDescripcion">Descripcion</label>
+                            <div class="col-md-4">
+                                <input id="txtDescripcion" name="txtDescripcion" type="text" class="form-control input-md">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="txtTerminado">Terminado</label>
+                            <div class="col-md-4">
+                                <input id="txtTerminado" name="txtTerminado" type="checkbox" class="form-control input-md">
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="btn-save"></label>
+                    <div class="col-md-4">
+                        <button id="btnCancelar" class="btn btn-warning" style="display:none">Cancelar</button>
+                        <button id="btnGuardar" class="btn btn-success">Guardar</button>
+                        <button id="btnEliminar" class="btn btn-danger">Eliminar</button>
+                    </div>
+                </div>
+            </div>
+            <div class=col-md-12>
+                <legend>Lista de Actividades</legend>
+                <button id="btnRecargar" class="btn btn-primary">Recargar</button>
+
+                <table class="table table-bordered table-condensed table-hover">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Descripcion</th>
+                            <th>Terminado</th>
+                            <th>FechaRegistro</th>
+                            <th>FechaModificado</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tblActividades" class="cursor"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="js/Principal.js" type="module"></script> 
+</body>
+</html>
